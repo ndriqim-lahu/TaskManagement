@@ -1,6 +1,6 @@
 <?php
     // define connection variables
-    $host = "127.0.0.1"; // 127.0.0.1
+    $host = "127.0.0.1"; // 127.0.0.1 or localhost
     $user = "root";
     $password = "";
     $dbName = "basic_web";
