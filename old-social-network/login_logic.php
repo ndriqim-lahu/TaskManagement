@@ -20,7 +20,6 @@
         echo "Logged in!!!";
         $_SESSION['logged_in'] = true;
         $_SESSION['first_name'] = $user['first_name'];
-        $_SESSION['email'] = $email;
         header("Location: /social-network/timeline.php");
         die();
     }else {

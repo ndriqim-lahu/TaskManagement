@@ -1,7 +1,9 @@
 <html>
+
 <head>
     <title>Login with Roles</title>
 </head>
+
 <body>
     <?php
     $users = [
@@ -41,19 +43,26 @@
         <form method="POST" action="">
             <label>Username or E-Mail:</label>
             <input type="text" name="username" />
+
             <br>
+
             <label>Password:</label>
             <input type="password" name="password" />
+
             <br>
+
             <label>Role:</label>
             <select name="role">
                 <option value="user">User</option>
                 <option value="admin">Admin</option>
             </select>
+
             <br>
+
             <b style="color: red;"><?php echo $message; ?></b><br>
             <button>Login</button>
         </form>
     </center>
 </body>
+
 </html>

@@ -1,26 +1,27 @@
 <?php
-    session_start();
-    require_once "util.php";
+session_start();
+require_once "util.php";
 
-    $title = $_POST['title'];
-    $description = trim($_POST['description']);
-    $dateTimeCreated = date("F j, Y, g:i a");
-    
-    $email = $_SESSION['email'];
+$title = $_POST['title'];
+$description = trim($_POST['description']);
+$dateTimeCreated = date("F j, Y, g:i a"); 
 
-    $post = [
-        'title' => $title,
-        'description' => $description,
-        'createdDate' => $dateTimeCreated,
-        'user_email' => $email,
-    ];
+$userId = $_SESSION['user_id'];
 
-    if (!empty($title) && !empty($description)) {
-        storePostToFile($post);
-    }
+$post = [
+    'title' => $title,
+    'description' => $description,
+    'createdDate' => $dateTimeCreated
+];
 
-    if (isUserLoggedIn()) {
-        header("Location: /social-network-db/timeline.php");
-        die();
-    }
+if(!empty($title) && !empty($description)){
+    storePostToFile($post, $userId);
+}
+
+if (isUserLoggedIn()) {
+    header("Location: /social-network-db/timeline.php");
+    die();
+}
+
+
 ?>

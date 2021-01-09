@@ -1,3 +1,5 @@
 <?php
-    echo "Deleting all files...";
+
+echo "Deleting all files...";
+
 ?>

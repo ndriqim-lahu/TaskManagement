@@ -4,7 +4,7 @@
 
     // if logged in then redirect to timeline.php
     if (isUserLoggedIn()) {
-        header("Location: /social-network-db/timeline.php");
+        header("Location: /social-network/timeline.php");
         die();
     }
     
@@ -18,8 +18,7 @@
         'first_name' => $firstName,
         'last_name' => $lastName,
         'email' => $email,
-        'password' => $password,
-        'posts' => []
+        'password' => $password
     ];
 
     if (doesUserExistByEmail($email)) {
@@ -30,5 +29,5 @@
     // save to file
     storeUserToFile($user);
 
-    echo "Welcome to Cacttus Social Network. Please click <a href='/social-network-db/'>here</a> to login!";
+    echo "Welcome to Cacttus Social Network. Please click <a href='/social-network/'>here</a> to login!";
 ?>

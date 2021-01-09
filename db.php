@@ -1,27 +1,28 @@
 <?php
-    // define connection variables
-    $host = "127.0.0.1"; // 127.0.0.1
-    $user = "root";
-    $password = "";
-    $dbName = "basic_web";
+    // define connectoin variables
+    $host   = "127.0.0.1"; // 127.0.0.1
+    $user       = "root";
+    $password   = "";
+    $dbName     = "basic_web";
 
     // create connection
     $dbConnection = null;
-    try {
+    try{
         $dbConnection = new PDO(
-            'mysql:host=' . $host . ';dbname=' . $dbName,
-            $user,
-            $password
-        );
-    } catch (Exception $e) {
-        echo "Connection failed: " . $e->getMessage();
+                'mysql:host=' . $host . ';dbname=' . $dbName,
+                $user,
+                $password
+            );
+    }catch(Exception $e){
+        echo "Connection failed: ".$e->getMessage();
         die();
     }
-
-    if (!$dbConnection) {
+    
+    if(!$dbConnection){
         echo "No database connection!";
         die();
     }
+
     echo "Connected to database! Woohooo!!!";
 
     // SELECT FROM TABLE USER
@@ -33,23 +34,24 @@
     echo "<pre>";
     var_dump($usersAssoc[0]['first_name']);
     var_dump($usersClass[0]->first_name);
+
     echo " --- ";
 
     // INSERT IN DATABASE
     $insertUserSQLQuery = "INSERT INTO `user` 
-        (`first_name`, `last_name`, `email`, `password`, `is_blocked`)
+        (`first_name`, `last_name`, `email`, `password`, `is_blocked`) 
         VALUES ('FILANE_Db', 'FISTEKU_Db', 'test2@gmail.com', '123456', '0');";
-    if ($dbConnection->exec($insertUserSQLQuery)) {
+    if($dbConnection->exec($insertUserSQLQuery)){
         echo "New user created!";
-    } else {
+    }else{
         echo "The user is not created!";
     }
 
     // UPDATE USER
-    $updateUserSQLQuery = "UPDATE user SET is_blocked = 1;";
-    if ($dbConnection->exec($updateUserSQLQuery)) {
+    $updateUserSQLQuery = "UPDATE user SET is_blocked=1;";
+    if($dbConnection->exec($updateUserSQLQuery)){
         echo "Users updated!";
-    } else {
+    }else{
         echo "Users not updated!";
     }
 
@@ -62,5 +64,4 @@
     }
 
     // CRUD -> CREATE, READ, UPDATE, DELETE
-    
 ?>

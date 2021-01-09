@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>JQuery Example</title>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    </head>
+    <body>
+        <center>
+            <button id="add_new_button">Add New</button>
+            <br><br>
+            <form id="new_menu_item_form" style="display: none;">
+                <label>Emri:</label>
+                <input id="new_menu_item_form_name" type="text" /><br>
+                <label>Cmimi:</label>
+                <input step=".01" id="new_menu_item_form_price" type="number"/><br>
+                <input id="new_menu_item_add_button" type="button" value="Add"></button>
+                <input id="new_menu_item_close_button" type="button" value="Close"></button>
+            </form>
+
+            <label>Search:</label><input id="search_box" type="text" /><br>
+            <table id="menu_items_table" border="1">
+                
+            </table>
+            <hr>
+            <table id="deleted_menu_items_table" border="1">
+            
+            </table>
+        </center>
+    </body>
+    <script src="index.js"></script>
+</html>
