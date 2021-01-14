@@ -21,8 +21,7 @@
     function findUserByEmailAndPassword($email, $password) {
         global $dbConnection;
 
-        $sqlQuery = "SELECT * FROM user WHERE email=:email
-                         AND password=:password";
+        $sqlQuery = "SELECT * FROM user WHERE email=:email AND password=:password";
 
         $encryptedPassword = md5($password);
         
