@@ -17,7 +17,9 @@
         <br><br>
         <p><b>Task Management Tool - Tasklist</b></p>
         <br><br>
-        <a href="/cacttus-s3-basic-web/task-management/signout.php">Sign out!</a>
+        <button id="task_add" type="button"><a href="/cacttus-s3-basic-web/task-management/taskadd_api.php">Add Task</a></button>
+        |
+        <button id="sign_out" type="button"><a href="/cacttus-s3-basic-web/task-management/signout.php">Sign out</a></button>
         <br>
     </center>
 </body>
