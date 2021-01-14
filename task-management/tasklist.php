@@ -4,7 +4,7 @@
 
     // if logged in then redirect to login.php
     if (!isUserLoggedIn()) {
-        header("Location: /task-management/login.php");
+        header("Location: /cacttus-s3-basic-web/task-management/login.php");
         die();
     }
 ?>
@@ -17,7 +17,7 @@
         <br><br>
         <p><b>Task Management Tool - Tasklist</b></p>
         <br><br>
-        <a href="/task-management/signout.php">Sign out!</a>
+        <a href="/cacttus-s3-basic-web/task-management/signout.php">Sign out!</a>
         <br>
     </center>
 </body>
