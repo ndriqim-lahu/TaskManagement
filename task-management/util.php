@@ -37,4 +37,23 @@
         }
         return null;
     }
+
+    function storeUserToDatabase(array $user) {
+        global $dbConnection;
+
+        $sqlQuery = "INSERT INTO `user` (`full_name`, `email`, `password`) VALUES (:fullName, :email, :password);";
+
+        $encryptedPassword = md5($user['password']);
+		
+        $statement = $dbConnection->prepare($sqlQuery);
+        $statement->bindParam(":fullName", $user['full_name']);
+        $statement->bindParam(":email", $user['email']);
+        $statement->bindParam(":password", $encryptedPassword);
+            
+        if($statement->execute()) {
+            return true;
+        } else{
+            return false;
+        }
+    }
 ?>
