@@ -5,6 +5,19 @@
         return isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true;
     }
 
+    function doesUserExistByEmail($email) {
+        global $dbConnection;
+
+        $sqlQuery = "SELECT * FROM user WHERE email=:email";
+        $statement = $dbConnection->prepare($sqlQuery);
+        $statement->bindParam(':email', $email);
+        if($statement->execute()){
+            $user = $statement->fetch(PDO::FETCH_ASSOC);
+            return $user !==  false;
+        }
+        return false;
+    }
+
     function findUserByEmailAndPassword($email, $password) {
         global $dbConnection;
 
