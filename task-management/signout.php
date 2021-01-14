@@ -2,6 +2,6 @@
     require_once "util.php";
 
     signOut();
-    header("Location: /task-management/login.php");
+    header("Location: /cacttus-s3-basic-web/task-management/login.php");
     die();
 ?>
