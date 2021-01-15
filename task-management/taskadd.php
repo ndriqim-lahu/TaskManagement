@@ -10,12 +10,12 @@
 ?>
 <html>
 <head>
-    <title>Task Management Tool | TASKLIST</title>
+    <title>Task Management Tool | Add Task</title>
 </head>
 <body>
     <center>
         <br><br>
-        <p><b>Task Management Tool - Tasklist</b></p>
+        <p><b>Task Management Tool - ADD TASK</b></p>
         <br><br>
         <form method="POST" action="/cacttus-s3-basic-web/task-management/tasklist.php">
             <label>Title:</label><br>
