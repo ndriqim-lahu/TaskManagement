@@ -10,7 +10,7 @@
 ?>
 <html>
 <head>
-    <title>Task Management Tool | TASKLIST</title>
+    <title>Task Management Tool | Task List</title>
 </head>
 <style>
 #task_content {
@@ -21,6 +21,7 @@
   padding: 20px;
   text-align: justify;
 }
+
 #task_status {
     float: right;
     margin: 10px;
@@ -38,7 +39,7 @@
 <body>
     <center>
         <br><br>
-        <p><b>Task Management Tool - Tasklist</b></p>
+        <p><b>Task Management Tool - TASK LIST</b></p>
         <br><br>
         <button id="task_add" type="button"><a href="/cacttus-s3-basic-web/task-management/taskadd.php">Add Task</a></button>
         |
