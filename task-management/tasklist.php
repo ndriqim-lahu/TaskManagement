@@ -13,6 +13,25 @@
     <title>Task Management Tool | Task List</title>
 </head>
 <style>
+a {
+    text-decoration: none;
+}
+
+#task_add {
+    background-color: silver;
+    color: white;
+    margin-left: 30px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+#sign_out {
+    background-color: silver;
+    color: white;
+    margin-left: 15px;
+    padding: 5px;
+}
+
 #task_content {
   width: 50%;
   background-color: lightgrey;
@@ -41,8 +60,8 @@
         <br><br>
         <p><b>Task Management Tool - TASK LIST</b></p>
         <br><br>
+        Welcome <b><?php echo $_SESSION['full_name'] ?></b>
         <button id="task_add" type="button"><a href="/cacttus-s3-basic-web/task-management/taskadd.php">Add Task</a></button>
-        |
         <button id="sign_out" type="button"><a href="/cacttus-s3-basic-web/task-management/signout.php">Sign out</a></button>
         <br><br>
         <div id="task_content">
