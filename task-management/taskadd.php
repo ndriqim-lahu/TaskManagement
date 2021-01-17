@@ -2,7 +2,7 @@
     session_start();
     require_once "util.php";
 
-    // if logged in then redirect to login.php
+    // check user if isn't logged-in and then redirect to login.php
     if (!isUserLoggedIn()) {
         header("Location: /cacttus-s3-basic-web/task-management/login.php");
         die();
@@ -12,6 +12,28 @@
 <head>
     <title>Task Management Tool | Add Task</title>
 </head>
+<style>
+#title_task {
+    width: 14%;
+    height: 3%;
+}
+
+#description_task {
+    width: 14%;
+    height: 14%;
+}
+
+#status_task {
+    width: 14%;
+    height: 3%;
+}
+
+#add_task {
+    width: 6%;
+    height: 4%;
+    background-color: silver;
+}
+</style>
 <body>
     <center>
         <br><br>
@@ -19,17 +41,17 @@
         <br><br>
         <form method="POST" action="/cacttus-s3-basic-web/task-management/tasklist.php">
             <label>Title:</label><br>
-            <input type="text" name="title"/><br><br>
+            <input id="title_task" type="text" name="title"/><br><br>
             <label>Description:</label><br>
-            <textarea rows="7" cols="22" name="description"></textarea><br><br>
+            <textarea id="description_task" name="description"></textarea><br><br>
             <label>Status:</label><br>
-            <select>
+            <select id="status_task">
                 <option>ToDo</option>
                 <option>InProgress</option>
                 <option>Done</option>
             </select>
             <br><br>
-            <input type="submit" value="Add"/>
+            <input id="add_task" type="submit" value="Add"/>
         </form>
         <br>
     </center>
