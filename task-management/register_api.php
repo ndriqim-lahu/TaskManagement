@@ -2,23 +2,6 @@
     session_start();
     require_once "util.php";
 
-    if ($_SERVER['REQUEST_METHOD'] != 'POST') {
-        echo json_encode([
-            'success' => false,
-            'message' => 'POST HTTP Method required!'
-        ]);
-        die();
-    }
-
-    // if logged in then redirect to tasklist.php
-    if (isUserLoggedIn()) {
-        echo json_encode([
-            'success' => false,
-            'message' => 'User is already authenticated'
-        ]);
-        die();
-    }
-    
     // get the data
     $fullName = $_POST['full_name'];
     $email = $_POST['email'];
