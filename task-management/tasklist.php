@@ -2,8 +2,7 @@
     session_start();
     require_once "util.php";
 
-    // if logged in then redirect to login.php
-    if (!isUserLoggedIn()) {
+    if(!isUserLoggedIn() && !isset($_SESSION['full_name'])) {
         header("Location: /cacttus-s3-basic-web/task-management/login.php");
         die();
     }
