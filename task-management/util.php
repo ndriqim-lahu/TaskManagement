@@ -1,10 +1,12 @@
 <?php
     require_once 'db.php';
 
+    // function to check for user if logged-in
     function isUserLoggedIn() {
         return isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true;
     }
 
+    // function to check for user in db if exist by email
     function doesUserExistByEmail($email) {
         global $dbConnection;
 
@@ -18,6 +20,7 @@
         return false;
     }
 
+    // function to check for user in db and find by email and password
     function findUserByEmailAndPassword($email, $password) {
         global $dbConnection;
 
@@ -38,6 +41,7 @@
         return null;
     }
 
+    // function for storing user to database
     function storeUserToDatabase(array $user) {
         global $dbConnection;
 
@@ -57,6 +61,7 @@
         }
     }
 
+    // function to make user signed-out
     function signOut() {
         session_start();
         session_destroy();
