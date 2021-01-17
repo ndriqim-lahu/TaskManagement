@@ -5,6 +5,7 @@
 
     header('Content-Type: application/json');
 
+    // check if request method isn't POST
     if ($_SERVER['REQUEST_METHOD'] != 'POST') {
         echo json_encode([
             'success' => false,
@@ -13,7 +14,7 @@
         die();
     }
 
-    // if logged in then redirect to tasklist.php
+    // check user if logged-in and authenticated
     if (isUserLoggedIn()) {
         echo json_encode([
             'success' => false,
@@ -28,8 +29,8 @@
 
     $user = findUserByEmailAndPassword($email, $password);
 
-    if($user != null){
-        // logged in
+    // check user if can log-in (authenticated) or cannot (wrong crendentials)
+    if ($user != null) {
         $_SESSION['logged_in'] = true;
         $_SESSION['full_name'] = $user['full_name'];
         $_SESSION['email'] = $email;
