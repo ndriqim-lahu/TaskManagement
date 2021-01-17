@@ -2,7 +2,7 @@
     session_start();
     require_once "util.php";
 
-    // if logged in then redirect to tasklist.php
+    // check user if logged-in and then redirect to tasklist.php
     if (isUserLoggedIn()) {
         header("Location: /cacttus-s3-basic-web/task-management/tasklist.php");
         die();
