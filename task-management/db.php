@@ -18,6 +18,7 @@
         die();
     }
 
+    // check if don't have db connection
     if (!$dbConnection) {
         echo "No database connection!";
         die();
