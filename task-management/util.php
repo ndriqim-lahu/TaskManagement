@@ -85,4 +85,20 @@
             return false;
         }
     }
+
+    // function for deleting task from database
+    function deleteTaskFromDatabase($id_task) {
+        global $dbConnection;
+
+        $sqlQuery = "DELETE FROM `task` WHERE `id_task` = :id_task";
+
+        $statement = $dbConnection->prepare($sqlQuery);
+        $statement->bindparam(":id_task", $id_task);
+
+        if ($statement->execute()) {
+           return true;
+        } else {
+            return false;
+        }
+    }
 ?>
