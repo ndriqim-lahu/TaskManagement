@@ -86,6 +86,21 @@
         }
     }
 
+    // function for getting task from database
+    function getTaskFromDatabase() {
+        global $dbConnection;
+		
+        $sqlQuery = "SELECT * FROM `task` WHERE `id` = " . $_SESSION['id'];
+
+        $statement = $dbConnection->prepare($sqlQuery);
+
+        if ($statement->execute()) {
+            return $statement->fetchAll(PDO::FETCH_ASSOC);;
+        } else {
+            return [];
+        }
+    }
+
     // function for deleting task from database
     function deleteTaskFromDatabase($id_task) {
         global $dbConnection;
