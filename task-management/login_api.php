@@ -34,7 +34,7 @@
         $_SESSION['logged_in'] = true;
         $_SESSION['full_name'] = $user['full_name'];
         $_SESSION['email'] = $email;
-        $_SESSION['user_id'] = $user['id'];
+        $_SESSION['id'] = $user['id'];
         echo json_encode([
             'success' => true,
             'message' => 'Authenticated'
