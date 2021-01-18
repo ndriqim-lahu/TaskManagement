@@ -11,50 +11,47 @@
 <html>
 <head>
     <title>Task Management Tool | Task List</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
 </head>
 <style>
-a {
-    color: black;
-    text-decoration: none;
-}
+    a {
+        color: white;
+        text-decoration: none;
+    }
 
-#task_add {
-    background-color: silver;
-    color: white;
-    margin-left: 30px;
-    padding: 5px;
-    text-decoration: none;
-}
+    #task_add {
+        background-color: grey;
+        color: black;
+        margin-left: 30px;
+        padding: 5px;
+        text-decoration: none;
+    }
 
-#sign_out {
-    background-color: silver;
-    color: white;
-    margin-left: 15px;
-    padding: 5px;
-}
+    #sign_out {
+        background-color: grey;
+        color: black;
+        margin-left: 15px;
+        padding: 5px;
+    }
 
-#task_content {
-  width: 50%;
-  background-color: lightgrey;
-  border: 1px solid black;
-  margin: 20px;
-  padding: 20px;
-  text-align: justify;
-}
+    .table {
+        margin: 10px;
+        background-color: silver;
+    }
 
-#task_status {
-    float: right;
-    margin: 10px;
-    padding: 5px;
-}
+    #task_status {
+        float: right;
+        margin: 10px;
+        padding: 5px;
+    }
 
-#task_delete {
-    background-color: red;
-    color: white;
-    float: right;
-    margin: 10px;
-    padding: 5px;
-}
+    #task_delete {
+        background-color: red;
+        color: white;
+        float: right;
+        margin: 10px;
+        padding: 5px;
+    }
 </style>
 <body>
     <center>
@@ -65,20 +62,53 @@ a {
         <button id="task_add" type="button"><a href="/cacttus-s3-basic-web/task-management/taskadd.php">Add Task</a></button>
         <button id="sign_out" type="button"><a href="/cacttus-s3-basic-web/task-management/signout.php">Sign out</a></button>
         <br><br>
-        <div id="task_content">
-            <button id="task_delete" type="button">DELETE</button>
-            <select id="task_status">
-                <option>ToDo</option>
-                <option>InProgress</option>
-                <option>Done</option>
-            </select>
-            <div id="task_title">
-                1. The title of the task
+        <?php
+            $id = $_SESSION['id'];
+            $tasks = getTaskFromDatabase();
+
+            if (empty($tasks)) {
+                ?>
+                    <div>
+                        No tasks exist by this user, but you can try to add some new!
+                    </div>
+                <?php
+            } else {
+                foreach ($tasks as $task) {
+                ?>
+                <div class="container">
+                <div class="row justify-content-center">
+                <table class="table">
+                <thead>
+                    <tr>
+                    <td>
+                        <u>Title:</u> <?php echo $task['title']; ?><br>
+                        <u>Description:</u> <?php echo $task['description']; ?><br>
+                        <u>Status:</u> <?php echo $task['status']; ?>
+                    </td>
+                    <td>
+            <?php
+                if ($_SESSION['id'] == $task['id']) {
+            ?>
+                <td>
+                    <button id="task_delete" type="button"><a href="/cacttus-s3-basic-web/task-management/taskdelete_api.php?delete= <?php echo $task['id_task']; ?>">DELETE</a></button>
+                    <select id="task_status">
+                        <option>ToDo</option>
+                        <option>InProgress</option>
+                        <option>Done</option>
+                    </select>
+                </td>
+            <?php
+            }
+            ?>
+                </tr>
+            </thead>
             </div>
-            <div id="task_description">
-                The description the task, The description the task, The description the task, The description the task, <br> The description the task...
             </div>
-        </div>
+            <hr>
+            <?php
+                }
+            }
+        ?>
     </center>
 </body>
 </html>
