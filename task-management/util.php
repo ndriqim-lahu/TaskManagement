@@ -45,7 +45,7 @@
     function storeUserToDatabase(array $user) {
         global $dbConnection;
 
-        $sqlQuery = "INSERT INTO `user` (`full_name`, `email`, `password`) VALUES (:fullName, :email, :password);";
+        $sqlQuery = "INSERT INTO `user` (`full_name`, `email`, `password`) VALUES (:fullName, :email, :password)";
 
         $encryptedPassword = md5($user['password']);
 		
@@ -65,5 +65,24 @@
     function signOut() {
         session_start();
         session_destroy();
+    }
+
+    // function for storing task to database
+    function storeTaskToDatabase(array $task) {
+        global $dbConnection;
+
+        $sqlQuery = "INSERT INTO `task` (`title`, `description`, `status`, `id`) VALUES (:title, :description, :status, :id)";
+
+        $statement = $dbConnection->prepare($sqlQuery);
+        $statement->bindparam(":title", $task['title']);
+        $statement->bindParam(":description", $task['description']);
+        $statement->bindParam(":status", $task['status']);
+        $statement->bindParam(":id", $_SESSION['id']);
+
+        if ($statement->execute()) {
+            return true;
+        } else {
+            return false;
+        }
     }
 ?>
