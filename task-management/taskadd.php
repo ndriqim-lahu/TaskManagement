@@ -39,13 +39,13 @@
         <br><br>
         <p><b>Task Management Tool - ADD TASK</b></p>
         <br><br>
-        <form method="POST" action="/cacttus-s3-basic-web/task-management/tasklist.php">
+        <form method="POST" action="/cacttus-s3-basic-web/task-management/taskadd_api.php">
             <label>Title:</label><br>
             <input id="title_task" type="text" name="title"/><br><br>
             <label>Description:</label><br>
             <textarea id="description_task" name="description"></textarea><br><br>
             <label>Status:</label><br>
-            <select id="status_task">
+            <select id="status_task" name="status">
                 <option>ToDo</option>
                 <option>InProgress</option>
                 <option>Done</option>
