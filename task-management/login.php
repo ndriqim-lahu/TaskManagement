@@ -20,9 +20,9 @@
         <br><br>
         <form onsubmit="return login();">
             <label>Email:</label><br>
-            <input id="login_email" type="email" name="email"/><br><br>
+            <input id="login_email" type="email" name="email" required/><br><br>
             <label>Password:</label><br>
-            <input id="login_password" type="password" name="password"/><br><br>
+            <input id="login_password" type="password" name="password" required/><br><br>
             <input type="submit" value="Login"/>
         </form>
         <br>
