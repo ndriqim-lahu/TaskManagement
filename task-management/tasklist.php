@@ -86,10 +86,6 @@
                         <u>Status:</u> <?php echo $task['status']; ?>
                     </td>
                     <td>
-            <?php
-                if ($_SESSION['id'] == $task['id']) {
-            ?>
-                <td>
                     <button id="task_delete" type="button"><a href="/cacttus-s3-basic-web/task-management/taskdelete_api.php?delete= <?php echo $task['id_task']; ?>">DELETE</a></button>
                     <select id="task_status">
                         <option>ToDo</option>
@@ -97,9 +93,6 @@
                         <option>Done</option>
                     </select>
                 </td>
-            <?php
-            }
-            ?>
                 </tr>
             </thead>
             </div>
