@@ -19,9 +19,9 @@
         <br><br>
         <form method="POST" action="/cacttus-s3-basic-web/task-management/register_api.php" onsubmit="return validatePassword();">
             <label>Full Name:</label><br>
-            <input id="register_fullname" type="text" name="full_name"/><br><br>
+            <input id="register_fullname" type="text" name="full_name" required/><br><br>
             <label>Email:</label><br>
-            <input id="register_email" type="email" name="email"/><br><br>
+            <input id="register_email" type="email" name="email" required/><br><br>
             <label>Password:</label><br>
             <input id="register_password" type="password" name="password"/><br><br>
             <input type="submit" value="Register"/>
