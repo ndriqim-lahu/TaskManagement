@@ -18,5 +18,5 @@
 
     storeTaskToDatabase($task);
 
-    header("Location: /cacttus-s3-basic-web/task-management/tasklist.php");
+    header("Location: /TaskManagementTool/task-management/tasklist.php");
 ?>

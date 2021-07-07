@@ -4,7 +4,7 @@
     
     // check user if logged-in and then redirect to tasklist.php
     if (isUserLoggedIn()) {
-        header("Location: /cacttus-s3-basic-web/task-management/tasklist.php");
+        header("Location: /TaskManagementTool/task-management/tasklist.php");
         die();
     }
 ?>
@@ -26,7 +26,7 @@
             <input type="submit" value="Login"/>
         </form>
         <br>
-        <a href="/cacttus-s3-basic-web/task-management/register.php">Register</a> if you don't have an account!
+        <a href="/TaskManagementTool/task-management/register.php">Register</a> if you don't have an account!
     </center>
 </body>
 <script>
@@ -34,7 +34,7 @@
         const email = $("#login_email").val();
         const password = $("#login_password").val();
 
-        const apiEndpoint = "/cacttus-s3-basic-web/task-management/login_api.php";
+        const apiEndpoint = "/TaskManagementTool/task-management/login_api.php";
 
         // post request to login_api.php with ajax call
         $.post(apiEndpoint, {

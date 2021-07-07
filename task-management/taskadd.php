@@ -4,7 +4,7 @@
 
     // check user if isn't logged-in and then redirect to login.php
     if (!isUserLoggedIn()) {
-        header("Location: /cacttus-s3-basic-web/task-management/login.php");
+        header("Location: /TaskManagementTool/task-management/login.php");
         die();
     }
 ?>
@@ -39,7 +39,7 @@
         <br><br>
         <p><b>Task Management Tool - ADD TASK</b></p>
         <br><br>
-        <form method="POST" action="/cacttus-s3-basic-web/task-management/taskadd_api.php">
+        <form method="POST" action="/TaskManagementTool/task-management/taskadd_api.php">
             <label>Title:</label><br>
             <input id="title_task" type="text" name="title"/><br><br>
             <label>Description:</label><br>

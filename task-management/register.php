@@ -4,7 +4,7 @@
 
     // check user if logged-in and then redirect to tasklist.php
     if (isUserLoggedIn()) {
-        header("Location: /cacttus-s3-basic-web/task-management/tasklist.php");
+        header("Location: /TaskManagementTool/task-management/tasklist.php");
         die();
     }
 ?>
@@ -17,7 +17,7 @@
         <br><br>
         <p><b>Task Management Tool - REGISTER</b></p>
         <br><br>
-        <form method="POST" action="/cacttus-s3-basic-web/task-management/register_api.php" onsubmit="return validatePassword();">
+        <form method="POST" action="/TaskManagementTool/task-management/register_api.php" onsubmit="return validatePassword();">
             <label>Full Name:</label><br>
             <input id="register_fullname" type="text" name="full_name" required/><br><br>
             <label>Email:</label><br>
@@ -27,7 +27,7 @@
             <input type="submit" value="Register"/>
         </form>
         <br>
-        <a href="/cacttus-s3-basic-web/task-management/login.php">Login</a> if you already have an account!
+        <a href="/TaskManagementTool/task-management/login.php">Login</a> if you already have an account!
     </center>
 </body>
 <script>

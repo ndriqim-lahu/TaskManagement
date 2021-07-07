@@ -23,5 +23,5 @@
     // storing user to database
     storeUserToDatabase($user);
 
-    echo "Welcome to Task Management Tool. Please click <a href='/cacttus-s3-basic-web/task-management/login.php'>here</a> to login!";
+    echo "Welcome to Task Management Tool. Please click <a href='/TaskManagementTool/task-management/login.php'>here</a> to login!";
 ?>

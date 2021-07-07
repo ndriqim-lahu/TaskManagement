@@ -4,7 +4,7 @@
 
     // check user if isn't logged-in and then redirect to login.php
     if(!isUserLoggedIn() && !isset($_SESSION['full_name'])) {
-        header("Location: /cacttus-s3-basic-web/task-management/login.php");
+        header("Location: /TaskManagementTool/task-management/login.php");
         die();
     }
 ?>
@@ -59,8 +59,8 @@
         <p><b>Task Management Tool - TASK LIST</b></p>
         <br><br>
         Welcome <b><?php echo $_SESSION['full_name'] ?></b>
-        <button id="task_add" type="button"><a href="/cacttus-s3-basic-web/task-management/taskadd.php">Add Task</a></button>
-        <button id="sign_out" type="button"><a href="/cacttus-s3-basic-web/task-management/signout.php">Sign out</a></button>
+        <button id="task_add" type="button"><a href="/TaskManagementTool/task-management/taskadd.php">Add Task</a></button>
+        <button id="sign_out" type="button"><a href="/TaskManagementTool/task-management/signout.php">Sign out</a></button>
         <br><br>
         <?php
             $id = $_SESSION['id'];
@@ -86,7 +86,7 @@
                         <u>Status:</u> <?php echo $task['status']; ?>
                     </td>
                     <td>
-                    <button id="task_delete" type="button"><a href="/cacttus-s3-basic-web/task-management/taskdelete_api.php?delete= <?php echo $task['id_task']; ?>">DELETE</a></button>
+                    <button id="task_delete" type="button"><a href="/TaskManagementTool/task-management/taskdelete_api.php?delete= <?php echo $task['id_task']; ?>">DELETE</a></button>
                     <select id="task_status">
                         <option>ToDo</option>
                         <option>InProgress</option>
