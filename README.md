@@ -76,10 +76,10 @@ In order to open this web application is required to have an IDE or Code Editor 
    ```terminal
    git clone https://github.com/ndriqimlahu/TaskManagementTool.git
    ```
-2. Open the repo folder with IDE or Code Editor.
-3. Then open XAMPP and start the `Apache` and `MySQL` modules.
-4. Launch the web application with Browser by typing the URL `localhost/TaskManagementTool/login.php` to open the specific file.
-5. Also you can open the other pages which are with extension `.php` file.
+2. Open the XAMPP and start the `Apache` and `MySQL` modules.
+3. Then open the repo folder with IDE or Code Editor.
+5. Launch the web application with Browser by typing the URL `localhost/TaskManagementTool/login.php` to open the specific file.
+6. Also you can open the other pages which are with extension `.php` file.
 
 
 <!-- USAGE -->
