@@ -67,7 +67,7 @@ By getting started with the project, first you need to take a look at the requir
 
 ### Prerequisites
 
-In order to open this web application is required to have an Web Server and Database Management Tool (XAMPP) and an Browser (Google Chrome).
+In order to open this web application is required to have an IDE or Code Editor (Visual Studio Code), an Web Server and Database Management Tool (XAMPP) and an Browser (Google Chrome).
 
 
 ### Installation
@@ -76,8 +76,10 @@ In order to open this web application is required to have an Web Server and Data
    ```terminal
    git clone https://github.com/ndriqimlahu/TaskManagementTool.git
    ```
-2. Open the repo folder and launch the web application with your XAMPP and Browser by clicking in the `login.php` file.
-3. Also you can open the other pages which are with extension `.php` file.
+2. Open the repo folder with IDE or Code Editor.
+3. Then open XAMPP and start the `Apache` and `MySQL` modules.
+4. Launch the web application with Browser by typing the URL `localhost/TaskManagementTool/login.php` to open the specific file.
+5. Also you can open the other pages which are with extension `.php` file.
 
 
 <!-- USAGE -->
