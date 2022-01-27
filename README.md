@@ -52,8 +52,8 @@ This web application is based on technologies like below:
 
 * HTML5
 * CSS3
-* JavaScript
 * Bootstrap
+* JavaScript
 * jQuery
 * PHP
 * MySQL
