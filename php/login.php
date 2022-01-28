@@ -44,19 +44,55 @@
 </head>
 
 <body>
+    <!-- Navigation -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top py-3 bg-dark"
+      id="mainNav"
+    >
+      <div class="container px-4 px-lg-5">
+        <a class="navbar-brand text-white" href="./index.html">Task Management Tool</a>
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto my-2 my-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./login.php">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./register.php">Register</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <center>
-        <br><br>
-        <p><b>Task Management Tool - LOGIN</b></p>
+        <br><br><br><br>
+        <h4>
+            <b>Login</b>
+            <br>
+            to continue
+        </h4>
         <br><br>
         <form onsubmit="return login();">
-            <label>Email:</label><br>
-            <input id="login_email" type="email" name="email" required /><br><br>
-            <label>Password:</label><br>
-            <input id="login_password" type="password" name="password" required /><br><br>
-            <input type="submit" value="Login" />
+            <label for="email">Email:</label><br>
+            <input id="login_email" class="rounded-pill p-1" type="email" name="email" size="50" required /><br><br>
+            <label for="password">Password:</label><br>
+            <input id="login_password" class="rounded-pill p-1" type="password" name="password" size="50" required /><br><br>
+            <input type="submit" value="Login" class="btn btn-primary btn-lg" />
         </form>
-        <br>
-        <a href="./register.php">Register</a> if you don't have an account!
+        <br><br>
     </center>
 </body>
 <script>

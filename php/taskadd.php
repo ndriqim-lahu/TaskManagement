@@ -41,45 +41,75 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <style>
-#title_task {
-    width: 14%;
-    height: 3%;
-}
-
-#description_task {
-    width: 14%;
-    height: 14%;
-}
-
-#status_task {
-    width: 14%;
-    height: 3%;
-}
-
-#add_task {
-    width: 6%;
-    height: 4%;
-    background-color: silver;
-}
+  #description_task {
+      width: 30%;
+      height: 30%;
+      border: 2px solid black;
+      border-radius: 20px;
+  }
+  #status_task {
+      width: 30%;
+      height: 6%;
+      border: 2px solid black;
+      border-radius: 20px;
+  }
 </style>
 <body>
+    <!-- Navigation -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top py-3 bg-dark"
+      id="mainNav"
+    >
+      <div class="container px-4 px-lg-5">
+        <a class="navbar-brand text-white" href="./index.html">Task Management Tool</a>
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto my-2 my-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./taskadd.php">Add Task</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./tasklist.php">Task List</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./signout.php">Signout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <center>
-        <br><br>
-        <p><b>Task Management Tool - ADD TASK</b></p>
+        <br><br><br><br>
+        <h4>
+            <b>Add Task</b>
+        </h4>
         <br><br>
         <form method="POST" action="./taskadd_api.php">
-            <label>Title:</label><br>
-            <input id="title_task" type="text" name="title"/><br><br>
-            <label>Description:</label><br>
-            <textarea id="description_task" name="description"></textarea><br><br>
+            <label for="title">Title:</label><br>
+            <input id="title_task" class="rounded-pill p-1" type="text" name="title" size="50" required /><br><br>
+            <label for="description">Description:</label><br>
+            <textarea id="description_task" name="description" required></textarea><br><br>
             <label>Status:</label><br>
-            <select id="status_task" name="status">
+            <select id="status_task" name="status" required>
                 <option>ToDo</option>
                 <option>InProgress</option>
                 <option>Done</option>
             </select>
             <br><br>
-            <input id="add_task" type="submit" value="Add"/>
+            <input id="add_task" class="btn btn-primary btn-lg" type="submit" value="Add"/>
         </form>
         <br>
     </center>

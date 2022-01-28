@@ -45,7 +45,6 @@
         color: white;
         text-decoration: none;
     }
-
     #task_add {
         background-color: grey;
         color: black;
@@ -53,27 +52,24 @@
         padding: 5px;
         text-decoration: none;
     }
-
     #sign_out {
         background-color: grey;
         color: black;
         margin-left: 15px;
         padding: 5px;
     }
-
     .table {
         margin: 10px;
         background-color: silver;
     }
-
     #task_status {
         float: right;
         margin: 10px;
         padding: 5px;
+        border: 1px solid black;
+        border-radius: 20px;
     }
-
     #task_delete {
-        background-color: red;
         color: white;
         float: right;
         margin: 10px;
@@ -81,13 +77,50 @@
     }
 </style>
 <body>
+    <!-- Navigation -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top py-3 bg-dark"
+      id="mainNav"
+    >
+      <div class="container px-4 px-lg-5">
+        <a class="navbar-brand text-white" href="./index.html">Task Management Tool</a>
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto my-2 my-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./taskadd.php">Add Task</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./tasklist.php">Task List</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./signout.php">Signout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <center>
+        <br><br><br><br>
+        <h4>
+            <b>Task List</b>
+        </h4>
         <br><br>
-        <p><b>Task Management Tool - TASK LIST</b></p>
-        <br><br>
-        Welcome <b><?php echo $_SESSION['full_name'] ?></b>
-        <button id="task_add" type="button"><a href="./taskadd.php">Add Task</a></button>
-        <button id="sign_out" type="button"><a href="./signout.php">Sign out</a></button>
+        Welcome <h5><b><?php echo $_SESSION['full_name'] ?></b></h5>
+        <hr width="300">
         <br><br>
         <?php
             $id = $_SESSION['id'];
@@ -96,7 +129,8 @@
             if (empty($tasks)) {
                 ?>
                     <div>
-                        No tasks exist by this user, but you can try to add some new!
+                        <br>
+                        <h5>No task has been found!</h5>
                     </div>
                 <?php
             } else {
@@ -108,12 +142,12 @@
                 <thead>
                     <tr>
                     <td>
-                        <u>Title:</u> <?php echo $task['title']; ?><br>
-                        <u>Description:</u> <?php echo $task['description']; ?><br>
-                        <u>Status:</u> <?php echo $task['status']; ?>
+                        <b>Title:</b> <?php echo $task['title']; ?><br>
+                        <b>Description:</b> <?php echo $task['description']; ?><br>
+                        <b>Status:</b> <?php echo $task['status']; ?>
                     </td>
                     <td>
-                    <button id="task_delete" type="button"><a href="./taskdelete_api.php?delete= <?php echo $task['id_task']; ?>">DELETE</a></button>
+                    <a id="task_delete" class="btn btn-danger btn-lg" href="./taskdelete_api.php?delete=<?php echo $task['id_task']; ?>">DELETE</a></a>
                     <select id="task_status">
                         <option>ToDo</option>
                         <option>InProgress</option>
@@ -124,7 +158,6 @@
             </thead>
             </div>
             </div>
-            <hr>
             <?php
                 }
             }
