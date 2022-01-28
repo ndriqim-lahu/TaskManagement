@@ -1,7 +1,7 @@
 <?php
     session_start();
-    require_once "util.php";
-	
+    require_once "./util.php";
+
     // get the data
     $title = $_POST['title'];
     $description = $_POST['description'];
@@ -18,5 +18,5 @@
 
     storeTaskToDatabase($task);
 
-    header("Location: /TaskManagementTool/task-management/tasklist.php");
+    header("Location: ./tasklist.php");
 ?>

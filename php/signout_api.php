@@ -1,6 +1,6 @@
 <?php
-    require_once "util.php";
-	
+    require_once "./util.php";
+
     signOut();
     header('Content-Type: application/json');
 

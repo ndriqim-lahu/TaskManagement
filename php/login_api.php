@@ -1,7 +1,7 @@
 <?php
     session_set_cookie_params(0);
     session_start();
-    require_once "util.php";
+    require_once "./util.php";
 
     header('Content-Type: application/json');
 
@@ -25,7 +25,7 @@
 
     // get the data
     $email = $_POST['email'];
-    $password= $_POST['password'];
+    $password = $_POST['password'];
 
     $user = findUserByEmailAndPassword($email, $password);
 

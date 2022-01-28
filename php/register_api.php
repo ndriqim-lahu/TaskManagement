@@ -1,6 +1,6 @@
 <?php
     session_start();
-    require_once "util.php";
+    require_once "./util.php";
 
     // get the data
     $fullName = $_POST['full_name'];
@@ -23,5 +23,5 @@
     // storing user to database
     storeUserToDatabase($user);
 
-    echo "Welcome to Task Management Tool. Please click <a href='/TaskManagementTool/task-management/login.php'>here</a> to login!";
+    echo "Welcome to Task Management Tool. Please click <a href='./login.php'>here</a> to login!";
 ?>

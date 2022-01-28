@@ -1,6 +1,6 @@
 <?php
     // define connection variables
-    $host   = "localhost"; // 127.0.0.1
+    $host       = "localhost"; // 127.0.0.1
     $user       = "root";
     $password   = "";
     $dbName     = "task-management";

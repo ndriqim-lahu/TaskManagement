@@ -1,5 +1,5 @@
 <?php
-    require_once 'db.php';
+    require_once './db.php';
 
     // function to check for user if logged-in
     function isUserLoggedIn() {
