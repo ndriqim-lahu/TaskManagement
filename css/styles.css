@@ -225,8 +225,8 @@ sup {
 }
 
 a {
-  color: #f4623a;
-  text-decoration: underline;
+  color: #835bcd;
+  text-decoration: none !important;
 }
 a:hover {
   color: #c34e2e;
@@ -11308,7 +11308,7 @@ hr.divider {
   height: 0.2rem;
   max-width: 3.25rem;
   margin: 1.5rem auto;
-  background-color: #f4623a;
+  background-color: #835bcd;
   opacity: 1;
 }
 
