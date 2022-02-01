@@ -1,0 +1,39 @@
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#task_add {
+  background-color: grey;
+  color: black;
+  margin-left: 30px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+#sign_out {
+  background-color: grey;
+  color: black;
+  margin-left: 15px;
+  padding: 5px;
+}
+
+.table {
+  margin: 10px;
+  background-color: silver;
+}
+
+#task_status {
+  float: right;
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+#task_delete {
+  color: white;
+  float: right;
+  margin: 10px;
+  padding: 5px;
+}

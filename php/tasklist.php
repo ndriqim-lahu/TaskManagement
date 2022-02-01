@@ -9,6 +9,7 @@
     }
 ?>
 <html>
+
 <head>
     <!-- Meta Data -->
     <meta charset="utf-8" />
@@ -33,6 +34,9 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
 
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/tasklist.css" />
+
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -40,42 +44,7 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
-<style>
-    a {
-        color: white;
-        text-decoration: none;
-    }
-    #task_add {
-        background-color: grey;
-        color: black;
-        margin-left: 30px;
-        padding: 5px;
-        text-decoration: none;
-    }
-    #sign_out {
-        background-color: grey;
-        color: black;
-        margin-left: 15px;
-        padding: 5px;
-    }
-    .table {
-        margin: 10px;
-        background-color: silver;
-    }
-    #task_status {
-        float: right;
-        margin: 10px;
-        padding: 5px;
-        border: 1px solid black;
-        border-radius: 20px;
-    }
-    #task_delete {
-        color: white;
-        float: right;
-        margin: 10px;
-        padding: 5px;
-    }
-</style>
+
 <body>
     <!-- Navigation -->
     <nav
@@ -113,6 +82,7 @@
         </div>
       </div>
     </nav>
+
     <center>
         <br><br><br><br>
         <h4>
@@ -163,5 +133,7 @@
             }
         ?>
     </center>
+
 </body>
+
 </html>
