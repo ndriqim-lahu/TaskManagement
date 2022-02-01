@@ -41,7 +41,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-The project called `Task Management Tool` is an web application which aims to enable and facilitate the life of users to manage tasks which can be of different categories and which can be divided on a daily or weekly basis. This web application is easy and simple to use, as all you need is to create a personal account, log in with the same account you created and then have the ability to create tasks, read tasks, as well as deleting tasks, also at the very end you can log out of your account and all tasks will be automatically saved in your active account. In this web application you can navigate into different pages which are “Login”, “Register”, “Task Add” and “Task List”.
+The project called `Task Management Tool` is an web application which aims to enable and facilitate the life of users to manage tasks which can be of different categories and which can be divided on a daily or weekly basis. This web application is easy and simple to use, as all you need is to create a personal account, log in with the same account you created and then have the ability to create tasks, read tasks, as well as deleting tasks, also at the very end you can log out of your account and all tasks will be automatically saved in your active account. In this web application you can navigate into different pages which are “Home”, “Login”, “Register”, “Task Add” and “Task List”.
 
 This project started from scratch where I worked and completed, also I made some improvements in the front-end and back-end side of Web Development, such as creating of the database, creating of tables, relational connection between tables by using the diagram, developing and designing the Login form, developing and designing the Register form, high validation of the input fields for Register form, creating of the Signout functionality, creating of the page for adding task, creating of the page for reading task, creating of the deleting task functionality, collecting the all functions in one file and many more things.
 
@@ -77,9 +77,9 @@ In order to open this web application is required to have an IDE or Code Editor 
    git clone https://github.com/ndriqimlahu/TaskManagementTool.git
    ```
 2. Open the XAMPP and start the `Apache` and `MySQL` modules.
-3. Then open the repo folder with your IDE or Code Editor.
+3. Now open the `MySQL` or `phpMyAdmin`, create a database with name `task-management` and then import the database from `task-management.sql` file.
+4. After that you can open the repo folder with your IDE or Code Editor.
 5. Launch the web application with Browser by typing the URL `http://localhost/TaskManagementTool/` to open the specific file.
-6. Also you can open the other pages which are with extension `.php` file.
 
 
 <!-- USAGE -->
