@@ -9,6 +9,7 @@
     }
 ?>
 <html>
+
 <head>
     <!-- Meta Data -->
     <meta charset="utf-8" />
@@ -33,6 +34,9 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
 
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/taskadd.css" />
+
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -40,20 +44,7 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
-<style>
-  #description_task {
-      width: 30%;
-      height: 30%;
-      border: 2px solid black;
-      border-radius: 20px;
-  }
-  #status_task {
-      width: 30%;
-      height: 6%;
-      border: 2px solid black;
-      border-radius: 20px;
-  }
-</style>
+
 <body>
     <!-- Navigation -->
     <nav
@@ -114,4 +105,5 @@
         <br>
     </center>
 </body>
+
 </html>

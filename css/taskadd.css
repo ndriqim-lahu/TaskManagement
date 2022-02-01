@@ -1,0 +1,14 @@
+#description_task {
+  width: 30%;
+  height: 30%;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+#status_task {
+  width: 30%;
+  height: 6%;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
