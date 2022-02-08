@@ -95,9 +95,9 @@
             <textarea id="description_task" name="description" required></textarea><br><br>
             <label>Status:</label><br>
             <select id="status_task" name="status" required>
-                <option value="todo">ToDo</option>
-                <option value="inprogress">InProgress</option>
-                <option value="done">Done</option>
+              <option value="todo">ToDo</option>
+              <option value="inprogress">InProgress</option>
+              <option value="done">Done</option>
             </select>
             <br><br>
             <input id="add_task" class="btn btn-primary btn-lg" type="submit" value="Add"/>

@@ -118,10 +118,10 @@
                     </td>
                     <td>
                     <a id="task_delete" class="btn btn-danger btn-lg" href="./taskdelete_api.php?delete=<?php echo $task['id_task']; ?>">DELETE</a></a>
-                    <select id="task_status">
-                        <option>ToDo</option>
-                        <option>InProgress</option>
-                        <option>Done</option>
+                    <select id="task_status" name="status">
+                      <option value="todo">ToDo</option>
+                      <option value="inprogress">InProgress</option>
+                      <option value="done">Done</option>
                     </select>
                 </td>
                 </tr>
