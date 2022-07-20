@@ -1,6 +1,6 @@
 <!-- PROJECT LOGO -->
 <p align="center">
-  <img src="https://github.com/ndriqimlahu/NdriqimLahuPortfolio/blob/main/assets/portfolio/TaskManagementTool.png" alt="Logo" width="250" height="250">
+  <img src="https://github.com/ndriqimlahu/ndriqim-lahu-portfolio/blob/main/assets/portfolio/TaskManagementTool.png" alt="Logo" width="250" height="250">
   <h3 align="center">Task Management Tool</h3>
   <p align="center">
     Ndriçim Lahu
@@ -74,7 +74,7 @@ In order to open this web application is required to have an IDE or Code Editor 
 
 1. Download the code or Clone the repo:
    ```terminal
-   git clone https://github.com/ndriqimlahu/TaskManagementTool.git
+   git clone https://github.com/ndriqimlahu/task-management-tool.git
    ```
 2. Open the XAMPP and start the `Apache` and `MySQL` modules.
 3. Now open the `MySQL` or `phpMyAdmin`, create a database with name `task-management` and then import the database from `task-management.sql` file.
