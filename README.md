@@ -79,7 +79,7 @@ In order to open this web application is required to have an IDE or Code Editor 
 2. Open the XAMPP and start the `Apache` and `MySQL` modules.
 3. Now open the `MySQL` or `phpMyAdmin`, create a database with name `task-management` and then import the database from `task-management.sql` file.
 4. After that you can open the repo folder with your IDE or Code Editor.
-5. Launch the web application with Browser by typing the URL `http://localhost/TaskManagementTool/` to open the specific file.
+5. Launch the web application with Browser by typing the URL `http://localhost/task-management-tool/` to open the specific file.
 
 
 <!-- USAGE -->
