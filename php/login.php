@@ -80,7 +80,7 @@
     <center>
         <br><br><br><br>
         <h4>
-            <b>Login</b>
+            <b>LOGIN</b>
             <br>
             to continue
         </h4>

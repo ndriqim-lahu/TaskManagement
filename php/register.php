@@ -79,7 +79,7 @@
     <center>
         <br><br><br><br>
         <h4>
-            <b>Register</b>
+            <b>SIGN UP</b>
             <br>
             for account
         </h4>
