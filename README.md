@@ -86,7 +86,59 @@ In order to open this web application is required to have an IDE or Code Editor 
 
 There you can see some useful additional screenshots of how the project looks like and how can be used.
 
-* Screenshots will be uploaded soon!
+* Home page (Responsive for Desktop)
+<img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/master/preview/01.1-Home%20page%20(Responsive%20for%20Desktop).png">
+
+* Home page (Responsive for Laptop)
+<img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/master/preview/01.2-Home%20page%20(Responsive%20for%20Laptop).png">
+
+* Login page (Responsive for Desktop)
+<img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/master/preview/02.1-Login%20page%20(Responsive%20for%20Desktop).png">
+
+* Login page (Responsive for Laptop)
+<img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/master/preview/02.2-Login%20page%20(Responsive%20for%20Laptop).png">
+
+* Login page (Responsive for Mobile)
+<img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/master/preview/02.3-Login%20page%20(Responsive%20for%20Mobile).png">
+
+* Sign Up page (Responsive for Desktop)
+<img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/master/preview/03.1-Sign%20Up%20page%20(Responsive%20for%20Desktop).png">
+
+* Sign Up page (Responsive for Laptop)
+<img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/master/preview/03.2-Sign%20Up%20page%20(Responsive%20for%20Laptop).png">
+
+* Sign Up page (Responsive for Mobile)
+<img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/master/preview/03.3-Sign%20Up%20page%20(Responsive%20for%20Mobile).png">
+
+* Task List page (Responsive for Desktop)
+<img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/master/preview/04.1-Task%20List%20page%20(Responsive%20for%20Desktop).png">
+
+* Task List page (Responsive for Laptop)
+<img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/master/preview/04.2-Task%20List%20page%20(Responsive%20for%20Laptop).png">
+
+* Task List page (Responsive for Mobile)
+<img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/master/preview/04.3-Task%20List%20page%20(Responsive%20for%20Mobile).png">
+
+* Add Task page (Responsive for Desktop)
+<img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/master/preview/05.1-Add%20Task%20page%20(Responsive%20for%20Desktop).png">
+
+* Add Task page (Responsive for Laptop)
+<img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/master/preview/05.2-Add%20Task%20page%20(Responsive%20for%20Laptop).png">
+
+* Add Task page (Responsive for Mobile)
+<img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/master/preview/05.3-Add%20Task%20page%20(Responsive%20for%20Mobile).png">
+
+* Task List page (Added Single Task)
+<img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/master/preview/06.1-Task%20List%20page%20(Added%20Single%20Task).png">
+
+* Task List page (Added Multi Tasks)
+<img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/master/preview/06.2-Task%20List%20page%20(Added%20Multi%20Tasks).png">
+
+* Task List page (Delete Tasks)
+<img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/master/preview/06.3-Task%20List%20page%20(Delete%20Tasks).png">
+
+* Task List page (No Task)
+<img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/master/preview/06.4-Task%20List%20page%20(No%20Task).png">
 
 
 <!-- COPYRIGHT -->
