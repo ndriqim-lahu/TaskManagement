@@ -52,7 +52,7 @@
       id="mainNav"
     >
       <div class="container px-4 px-lg-5">
-        <a class="navbar-brand text-white" href="./index.html">Task Management Tool</a>
+        <a class="navbar-brand text-white" href="../index.html">Task Management Tool</a>
         <button
           class="navbar-toggler navbar-toggler-right"
           type="button"
