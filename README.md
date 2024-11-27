@@ -1,157 +1,102 @@
-<!-- PROJECT LOGO -->
-<p align="center">
-  <img src="https://github.com/ndriqimlahu/ndriqim-lahu-portfolio/blob/main/assets/portfolio/TaskManagementTool.png" alt="Logo" width="250" height="250">
-  <h3 align="center">Task Management Tool</h3>
-  <p align="center">
-    Ndriçim Lahu
-    <br>
-    <br>
-    <a href="https://github.com/ndriqimlahu/task-management-tool/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/ndriqimlahu/task-management-tool/issues">Request Feature</a>
-  </p>
-</p>
+# Task Management Tool
 
+**Task Management Tool** is a web application designed to help users effortlessly organize and manage their tasks. Built with a focus on usability and efficiency, the tool allows users to create, read, and delete tasks, all while ensuring a secure and seamless experience. The application performs input validation during user authentication to maintain data integrity and enhance reliability. By leveraging a robust relational database, it stores and retrieves data persistently, ensuring uninterrupted task management across sessions.
 
-<!-- TABLE OF CONTENTS -->
-<details open="open">
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#support">Support</a></li>
-  </ol>
-</details>
+This project is an ideal solution for individuals seeking a straightforward and reliable tool for daily task tracking. Its intuitive design ensures ease of use for beginners, while its underlying architecture is powerful enough to handle more complex workflows. The secure user authentication system offers peace of mind, allowing users to focus entirely on their productivity. Whether you're organizing personal tasks or managing multiple projects, this tool delivers a practical and effective solution.
 
+## Built With
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+This web application was developed using the following tools, technologies, and resources:
+- **HTML**
+- **CSS**
+- **Bootstrap**
+- **JavaScript**
+- **jQuery**
+- **PHP**
+- **MySQL**
+- **Start Bootstrap Creative** — [Reference link](https://startbootstrap.com/theme/creative)
 
-The project called `Task Management Tool` is an web application which aims to enable and facilitate the life of users to manage tasks which can be of different categories and which can be divided on a daily or weekly basis. This web application is easy and simple to use, as all you need is to create a personal account, log in with the same account you created and then have the ability to create tasks, read tasks, as well as deleting tasks, also at the very end you can log out of your account and all tasks will be automatically saved in your active account. In this web application you can navigate into different pages which are “Home”, “Login”, “Register”, “Task Add” and “Task List”.
+## Features
 
-This project started from scratch where I worked and completed, also I made some improvements in the front-end and back-end side of Web Development, such as creating of the database, creating of tables, relational connection between tables by using the diagram, developing and designing the Login form, developing and designing the Register form, high validation of the input fields for Register form, creating of the Signout functionality, creating of the page for adding task, creating of the page for reading task, creating of the deleting task functionality, collecting the all functions in one file and many more things.
+✅ **User Authentication:** Users can securely sign up and log in to their account, ensuring that only authorized individuals can access and manage their tasks.
 
+✅ **Task Management:** The application allows users to easily create, read, and delete tasks, providing a simple yet effective way to stay organized and on top of their responsibilities.
 
-### Built With
+✅ **Persistent Data Storage:** All tasks are stored in a MySQL database, which ensures that data is saved across sessions, so users never lose their information even when they log out or close the app.
 
-This web application is based on technologies like below:
+✅ **Input Validation:** Input fields are thoroughly validated during user authentication and task creation to maintain data integrity, ensuring only valid information is entered and preventing errors.
 
-* HTML5
-* CSS3
-* Bootstrap
-* JavaScript
-* jQuery
-* PHP
-* MySQL
+✅ **Task List Interface:** The tasks are displayed in a clear, organized list with easy navigation, allowing users to quickly view, manage, and update their tasks efficiently.
 
+✅ **Task Deletion:** Users can remove tasks they no longer need or want, allowing them to keep their task list up-to-date and focused on current priorities.
 
-<!-- GETTING STARTED -->
-## Getting Started
+✅ **Responsive Design:** The web application is fully responsive, ensuring a seamless user experience across various devices such as desktops, tablets, and smartphones, adapting to different screen sizes.
 
-By getting started with the project, first you need to take a look at the required `Prerequisites` and after that the `Installation` steps.
+## Prerequisites
 
+Before starting, ensure the following is installed on your system:
+- **XAMPP**
+  - Download the [XAMPP](https://www.apachefriends.org/download.html).
+  - Follow the [installation guide](https://www.apachefriends.org/faq_windows.html) to install and configure it properly.
+  - XAMPP is required to run the web server, execute PHP code, and manage the MySQL database locally.
+  - Verify your PHP installation by running the following command in your terminal:
+    ```
+    php -v
+    ```
+  - Ensure your system's `PATH` is properly configured to allow PHP commands to run globally from any location.
 
-### Prerequisites
+## Installation
 
-In order to open this web application is required to have an IDE or Code Editor (Visual Studio Code), an Web Server and Database Management Tool (XAMPP) and an Browser (Google Chrome).
-
-
-### Installation
-
-1. Download the code or Clone the repo:
-   ```terminal
+1. Clone or download the repository to your local machine:
+   ```
    git clone https://github.com/ndriqimlahu/task-management-tool.git
    ```
-2. Open the XAMPP and start the `Apache` and `MySQL` modules.
-3. Now open the `MySQL` or `phpMyAdmin`, create a database with name `task-management` and then import the database from `task-management.sql` file.
-4. After that you can open the repo folder with your IDE or Code Editor.
-5. Launch the web application with Browser by typing the URL `http://localhost/task-management-tool/` to open the specific file.
+2. Ensure the repository folder is placed under the `htdocs` directory within your **XAMPP** installation folder, so that the web server can detect and run the web application.
+3. Launch the **XAMPP Control Panel** and start the **Apache** and **MySQL** services.
+4. Open **phpMyAdmin** or **MySQL**:
+    - In your browser, go to `http://localhost/phpmyadmin/` to access the database server.
+    - Click on **Databases** at the top.
+    - In the **Create database** field, enter `task_management` and click **Create** button.
+    - Once the database is created, click on the `task_management` database, then click the **Import** tab.
+    - Click **Choose File**, select the `task-management.sql` file from the repository folder, and click **Import** button to import the database.
+    - Follow the prompts to complete the import process.
+5. Navigate to `http://localhost/task-management-tool/` using any modern web browser to view the web application locally.
 
+## Screenshots
 
-<!-- USAGE -->
-## Usage
+Below you can see some additional useful screenshots of what the web application looks like and how it can be used:
 
-There you can see some useful additional screenshots of how the project looks like and how can be used.
+- Home page | Login page
+<div>
+   <img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/main/preview/01.1-Home%20page%20(Responsive%20for%20Desktop).png" align="top" width="48%" height="auto">
+   <img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/main/preview/02.1-Login%20page%20(Responsive%20for%20Desktop).png" align="top" width="48%" height="auto">
+   <hr>
+</div>
 
-* Home page (Responsive for Desktop)
-<img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/master/preview/01.1-Home%20page%20(Responsive%20for%20Desktop).png">
+- Sign up page | Task List page
+<div>
+   <img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/main/preview/03.1-Sign%20Up%20page%20(Responsive%20for%20Desktop).png" align="top" width="48%" height="auto">
+   <img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/main/preview/04.1-Task%20List%20page%20(Responsive%20for%20Desktop).png" align="top" width="48%" height="auto">
+   <hr>
+</div>
 
-* Home page (Responsive for Laptop)
-<img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/master/preview/01.2-Home%20page%20(Responsive%20for%20Laptop).png">
+- Add Task page | Task List page — A new task has been added
+<div>
+   <img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/main/preview/05.1-Add%20Task%20page%20(Responsive%20for%20Desktop).png" align="top" width="48%" height="auto">
+   <img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/main/preview/06.1-Task%20List%20page%20(Added%20Single%20Task).png" align="top" width="48%" height="auto">
+   <hr>
+</div>
 
-* Login page (Responsive for Desktop)
-<img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/master/preview/02.1-Login%20page%20(Responsive%20for%20Desktop).png">
+- Task List page — Many tasks have been added | Task List page — Some tasks have been removed
+<div>
+   <img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/main/preview/06.2-Task%20List%20page%20(Added%20Multi%20Tasks).png" align="top" width="48%" height="auto">
+   <img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/main/preview/06.3-Task%20List%20page%20(Delete%20Tasks).png" align="top" width="48%" height="auto">
+   <hr>
+</div>
 
-* Login page (Responsive for Laptop)
-<img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/master/preview/02.2-Login%20page%20(Responsive%20for%20Laptop).png">
+- Task List page — All tasks have been removed
+<img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/main/preview/06.4-Task%20List%20page%20(No%20Task).png" align="top" width="48%" height="auto">
 
-* Login page (Responsive for Mobile)
-<img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/master/preview/02.3-Login%20page%20(Responsive%20for%20Mobile).png">
-
-* Sign Up page (Responsive for Desktop)
-<img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/master/preview/03.1-Sign%20Up%20page%20(Responsive%20for%20Desktop).png">
-
-* Sign Up page (Responsive for Laptop)
-<img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/master/preview/03.2-Sign%20Up%20page%20(Responsive%20for%20Laptop).png">
-
-* Sign Up page (Responsive for Mobile)
-<img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/master/preview/03.3-Sign%20Up%20page%20(Responsive%20for%20Mobile).png">
-
-* Task List page (Responsive for Desktop)
-<img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/master/preview/04.1-Task%20List%20page%20(Responsive%20for%20Desktop).png">
-
-* Task List page (Responsive for Laptop)
-<img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/master/preview/04.2-Task%20List%20page%20(Responsive%20for%20Laptop).png">
-
-* Task List page (Responsive for Mobile)
-<img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/master/preview/04.3-Task%20List%20page%20(Responsive%20for%20Mobile).png">
-
-* Add Task page (Responsive for Desktop)
-<img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/master/preview/05.1-Add%20Task%20page%20(Responsive%20for%20Desktop).png">
-
-* Add Task page (Responsive for Laptop)
-<img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/master/preview/05.2-Add%20Task%20page%20(Responsive%20for%20Laptop).png">
-
-* Add Task page (Responsive for Mobile)
-<img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/master/preview/05.3-Add%20Task%20page%20(Responsive%20for%20Mobile).png">
-
-* Task List page (Added Single Task)
-<img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/master/preview/06.1-Task%20List%20page%20(Added%20Single%20Task).png">
-
-* Task List page (Added Multi Tasks)
-<img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/master/preview/06.2-Task%20List%20page%20(Added%20Multi%20Tasks).png">
-
-* Task List page (Delete Tasks)
-<img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/master/preview/06.3-Task%20List%20page%20(Delete%20Tasks).png">
-
-* Task List page (No Task)
-<img src="https://raw.githubusercontent.com/ndriqimlahu/task-management-tool/master/preview/06.4-Task%20List%20page%20(No%20Task).png">
-
-
-<!-- LICENSE -->
-## License
-
-See the `LICENSE` file for more information.
-
-
-<!-- SUPPORT -->
 ## Support
 
-Issues and feature requests are welcome!
-
-Give a ⭐️ if you liked this project!
-
-Support the author on <a href="https://www.buymeacoffee.com/ndriqimlahu">Buy Me a Coffee</a>
+If you find this project useful, please consider giving it a star!
